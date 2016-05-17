@@ -1,0 +1,26 @@
+<article class="blog-header">
+    <h1>Login</h1>
+    <p><a href="#/">Home</a> | <a href="#login">Login</a></p>
+</article>
+
+<article class="contact-page">
+    <form name="loginForm">
+        <div class="form-group col-md-12">
+            <input class="form-control" name="userEmail" ng-model="user.email" type="text" placeholder="Email" required/>
+        </div>
+        <div role="alert">
+            <span class="error" ng-show="loginForm.userEmail.$error.required">
+       Required!</span>
+        </div>
+        <div class="form-group col-md-12">
+            <input class="form-control" name="userPassword" ng-model="user.password" type="text" placeholder="Password" required/>
+        </div>
+        <div role="alert">
+            <span class="error" ng-show="loginForm.userPassword.$error.required">
+       Required!</span>
+        </div>
+        <div class="text-center col-md-12">
+            <button type="button" ng-click="login(user)" class="btn btn-default btn-lg btn-block">Submit</button>
+        </div>
+    </form>
+</article>

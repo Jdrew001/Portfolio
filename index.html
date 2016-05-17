@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html ng-app="portfolio">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="Scripts/angular-route.min.js"></script>
+    
+    <script type="text/javascript" src="Scripts/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/b62ac2be04.js"></script>
+    <script src="js/JQuery/card-hover.js" type="text/javascript"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap-theme.min.css.map" />
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap.min.css.map" />
+
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <!-- When the screen gets to a certain size then collapse the screen -->
+            <div class="menu-header">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-brand-1 hidden-xs .visible-lg .visible-md .visible-sm" href="#/">Drew's Portfolio</a>
+                    <a class="navbar-brand navbar-brand-2" href="#/">Drew's Portfolio</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Normal size screen menu -->
+            <div class="collapse navbar-collapse nav-menu" id="menu">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <!-- Loading each view into the index page -->
+        <div ng-view></div>
+    </section>
+    <footer>
+        <div>
+            <i class="col-md-1 fa fa-copyright"></i>
+            <p class="pull-left"> All Rights Reserved - Made By Drew Atkison</p>
+        </div>
+    </footer>
+
+
+    <!-- Modules -->
+    <script type="text/javascript" src="Js/app.js"></script>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="Js/Controllers/HomeController.js"></script>
+    <script type="text/javascript" src="Js/Controllers/TutorialController.js"></script>
+    <script type="text/javascript" src="Js/Controllers/HtmlController.js"></script>
+    <script type="text/javascript" src="Js/Controllers/ContactController.js"></script>
+    <script type="text/javascript" src="Js/Controllers/BlogController.js"></script>
+    <script type="text/javascript" src="Js/Controllers/LoginController.js"></script>
+    <script type="text/javascript" src="Js/Controllers/AdminController.js"></script>
+    <!-- Services -->
+    
+</body>
+
+</html>
