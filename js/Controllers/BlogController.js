@@ -5,14 +5,6 @@ app.controller('BlogController', ['$scope', '$firebaseArray', function($scope, $
     $scope.posts.$loaded()
         .then(function() {
             console.log($scope.posts);
-            
-            for (var post in $scope.posts) {
-               
-                    
-                    console.log(post);
-                
-            }
-            
         })
         .catch(function(err) {
             console.error(err);

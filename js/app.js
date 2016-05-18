@@ -7,60 +7,60 @@ app.config(function($routeProvider, $sceDelegateProvider, $locationProvider) {
     //Home 
         .when('/', {
         controller: 'HomeController',
-        templateUrl: 'views/home.html'
+        templateUrl: 'Views/home.html'
     })
 
     //Services 
     .when('/tutorials', {
         controller: 'TutorialController',
-        templateUrl: 'views/Tutorials.html'
+        templateUrl: 'Views/Tutorials.html'
     })
 
     //Contact
     .when('/contact', {
         controller: 'ContactController',
-        templateUrl: 'views/Contact.html'
+        templateUrl: 'Views/Contact.html'
     })
 
     //Blog
     .when('/blog', {
         controller: 'BlogController',
-        templateUrl: 'views/Blog.html'
+        templateUrl: 'Views/Blog.html'
     })
 
     //Html Tutorials
     .when('/tutorials/html', {
         controller: 'HtmlController',
-        templateUrl: 'views/HtmlTut.html'
+        templateUrl: 'Views/HtmlTut.html'
     })
 
     //css tutorals
     .when('/tutorials/css', {
         controller: 'CssController',
-        templateUrl: 'views/CssTut.html'
+        templateUrl: 'Views/CssTut.html'
     })
 
     //Fundamentals
     .when('/tutorials/programmingFundamentals', {
         controller: 'FundamentalsController',
-        templateUrl: 'views/ProgrammingFun.html'
+        templateUrl: 'Views/ProgrammingFun.html'
     })
 
     //languages 
     .when('/tutorials/programmingLanguages', {
         controller: 'LanguagesController',
-        templateUrl: 'views/ProgrammingLang.html'
+        templateUrl: 'Views/ProgrammingLang.html'
     })
     
     .when('/admin', {
         controller: 'AdminController',
-        templateUrl: 'views/Admin.html'
+        templateUrl: 'Views/Admin.html'
     })
     
     //login
     .when('/login', {
         controller: 'LoginController',
-        templateUrl: 'views/Login.html'
+        templateUrl: 'Views/Login.html'
     });
 
     //Enables Angular to use the video
